@@ -54,18 +54,33 @@ public class ECOQUEUE extends javax.swing.JFrame {
             .addGap(0, 74, Short.MAX_VALUE)
         );
 
+        Email.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         Email.setText("Institutional Email");
 
+        jtuser.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jtuser.addActionListener(this::jtuserActionPerformed);
 
+        Password.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         Password.setText("Password");
 
         jpassword.setText("   ");
+        jpassword.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jpassword.addActionListener(this::jpasswordActionPerformed);
 
+        jlogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jlogin.setText("Log In");
+        jlogin.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jlogin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jloginMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jloginMouseEntered(evt);
+            }
+        });
         jlogin.addActionListener(this::jloginActionPerformed);
 
+        jshowtext.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jshowtext.setText("Show Password");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -74,19 +89,20 @@ public class ECOQUEUE extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(DESIGN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(206, 206, 206)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jshowtext)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(Password)
-                        .addComponent(Email)
-                        .addComponent(jtuser)
-                        .addComponent(jpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(206, 206, 206)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jshowtext)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Password)
+                                .addComponent(Email)
+                                .addComponent(jtuser)
+                                .addComponent(jpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(280, 280, 280)
+                        .addComponent(jlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(200, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(299, Short.MAX_VALUE)
-                .addComponent(jlogin)
-                .addGap(296, 296, 296))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -103,8 +119,8 @@ public class ECOQUEUE extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jshowtext)
                 .addGap(18, 18, 18)
-                .addComponent(jlogin)
-                .addGap(0, 82, Short.MAX_VALUE))
+                .addComponent(jlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 63, Short.MAX_VALUE))
         );
 
         pack();
@@ -122,6 +138,14 @@ public class ECOQUEUE extends javax.swing.JFrame {
     private void jpasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jpasswordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jpasswordActionPerformed
+
+    private void jloginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jloginMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jloginMouseClicked
+
+    private void jloginMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jloginMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jloginMouseEntered
 
     /**
      * @param args the command line arguments
