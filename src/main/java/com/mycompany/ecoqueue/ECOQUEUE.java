@@ -89,7 +89,7 @@ public class ECOQUEUE extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(380, 380, 380)
+                        .addGap(338, 338, 338)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jshowtext)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -98,9 +98,9 @@ public class ECOQUEUE extends javax.swing.JFrame {
                                 .addComponent(jtuser)
                                 .addComponent(jpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(460, 460, 460)
+                        .addGap(411, 411, 411)
                         .addComponent(jlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(380, Short.MAX_VALUE))
+                .addContainerGap(338, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
